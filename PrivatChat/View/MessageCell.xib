@@ -16,14 +16,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-WU-M6k">
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-WU-M6k">
                         <rect key="frame" x="10" y="10" width="300" height="54"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Zxj-Dw-K8M">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FIK-sk-VqL"/>
+                                    <constraint firstAttribute="height" constant="40" id="aES-H0-CLp"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5o-RX-By8">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                <rect key="frame" x="60" y="0.0" width="180" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnW-w6-421">
-                                        <rect key="frame" x="10" y="10" width="220" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="160" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -57,6 +64,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="GnW-w6-421" id="MHJ-Os-hs8"/>
+                <outlet property="leftImageView" destination="Zxj-Dw-K8M" id="BTG-K7-muq"/>
                 <outlet property="messageBubble" destination="W5o-RX-By8" id="Ptq-xP-W2E"/>
                 <outlet property="rightImageView" destination="aDD-jV-DrX" id="LL0-FD-Kt8"/>
             </connections>
@@ -65,5 +73,6 @@
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
     </resources>
 </document>
