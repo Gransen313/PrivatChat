@@ -1,0 +1,6 @@
+framework module Pods_PrivatChat {
+  umbrella header "Pods-PrivatChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
